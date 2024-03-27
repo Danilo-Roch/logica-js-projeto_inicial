@@ -1,18 +1,11 @@
-alert('Bem vindo ao jogo, tente descobrir o número secreto');
+alert('Bem vindo ao jogo do número secreto')
+prompt('Digite um número de 1 a 5');
 
-let numeroSecreto = Math.floor(Math.random() * 16);
-
-let numeroTentativas = 0;
-
-while (numeroTentativas <= 2) {
-    let numeroEscolhido = parseInt(prompt('Digite um número de 0 a 15'));
-    if(numeroSecreto == numeroEscolhido){
-        alert(`Parabéns você acertou o número ${numeroSecreto}`);
-        break;
-        } else if(numeroEscolhido > numeroSecreto){
-            alert(`Você digitou ${numeroEscolhido} que é um número maior que o número secreto`);
-        } else{
-            alert(`Você digitou ${numeroEscolhido} que é um número menor que o número secreto`);
-        }
-    numeroTentativas = numeroTentativas + 1;
+let numeroSecreto = 3;
+let numeroDigitado = parseInt(prompt('Digite um número de 1 a 5'));
+if(numeroDigitado === numeroSecreto){
+    alert('Parabéns, você acertou!');
+} else {
+    alert('Você errou! ')
 }
+ let 
