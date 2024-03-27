@@ -1,6 +1,8 @@
 alert('Bem vindo ao jogo do número secreto');
 
-let numeroSecreto = 3;
+let numeroSecreto = math.floor(math.radom() * 5);
+alert(`O número secreto é ${numeroSecreto}`);
+
 let numeroDigitado = parseInt(prompt('Digite um número de 1 a 5'));
 
 if(numeroDigitado === numeroSecreto){
