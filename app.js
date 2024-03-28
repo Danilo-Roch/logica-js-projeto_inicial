@@ -13,7 +13,19 @@ if(numeroDigitado === numeroSecreto){
 } else {
     alert('Você digitou um número menor que o número secreto');
 }
-    tentativas = tentativas -1;
-}
+    tentativas++;
+    if(tentativas === 4){
+    alert(`Suas tentativas acabaram`);
+    } else if (tentativas <3){
+         alert(`Você ainda tem tentativas ${4 - tentativas} tentativas`);
+    }else{
+        alert(`Você ainda tem tentativas ${4 - tentativas} tentativas`);
+    }    
+   
+} 
+  let palavraTentativa = tentativas > 1 ? `tentativas` : `tentativa`;
+  if (tentaivas < 4){
+    alert(`Você acertou com ${tentativas} ${palavraTentativa} `)
+  }
 
 
