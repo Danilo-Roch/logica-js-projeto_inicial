@@ -1,0 +1,32 @@
+let atividade = [
+    ['acorda', 5],
+    ['aula', 7]
+]
+
+for(let i = 0; i < 2; i++){
+    for(let j = 0; j < 2; j++){
+        alert(atividade[i][j])
+ 
+ 
+    }
+    let tabelatresportres = [
+        [0, 0, 0,]
+        [0, 0, 0,]
+        [0, 0, 0,]
+    ]
+
+}
+
+ function aleatorizandoTabela(tabela){
+    for(let i = 0; i < tabela.lenght; i++){
+        for(let j = 0; j < tabela[i].lenght; j++){
+            tabela[i][j] = gerandoNumeroAleatorio(100)
+        }
+    }
+    return tabela;
+ }
+ function gerandoNumeroAleatorio(range){
+    return Math.floor(math.random() * range + 1); 
+ }
+ console.table(aleatorizandoTabela(tabelaEntrada));
+ 
