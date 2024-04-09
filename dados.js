@@ -1,5 +1,6 @@
-let nome=prompt('Qual é o sue nome ?')
-let idade=prompt('Qual é a sua idade ?')
-alert(`seu nome ${nome} e sua idade é ${idade}`)
+let nome = prompt('Digite seu nome');
+let idade = prompt('Digite sua idade');
+
+alert(`Seu nome é: ${nome} e sua idade é: ${idade}`);
 
 
